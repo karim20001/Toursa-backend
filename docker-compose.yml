@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - mynetwork
+
+  # Optionally, you can include a service for running migrations or collecting static files
+  # for production readiness.
+
+networks:
+  mynetwork:
+    driver: bridge
