@@ -79,8 +79,8 @@ This project is a backend system for buying tour tickets, featuring payment inte
    ```
 ## Tech Stack
 - **Language**: Python
-- **Framework**: Django/Flask (depending on your choice)
-- **Database**: PostgreSQL/MySQL/SQLite (choose based on your preference)
+- **Framework**: Django
+- **Database**: PostgreSQL
 - **Payment Gateway**: Zarinpal API
 - **Containerization**: Docker
 
